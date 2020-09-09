@@ -13,7 +13,7 @@
 
 O(1) < O(logn) < o(n) < o(nlogn) < o(n2) < o(n3) < o(2의 n승)
 
-시간 복잡도 표 : https://media.vlpt.us/post-images/bathingape/f01d6690-2d00-11ea-b0c6-7de1d93f2233/image.png [각 시간 복잡도 표]
+![시간 복잡도 표](./image.png)
 
 O(1) : 입력 데이터의 크기와 상관없이 언제나 일정한 시간이 걸리는 알고리즘을 말한다. (Constant Time)
 
