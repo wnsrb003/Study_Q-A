@@ -19,6 +19,7 @@ Java Virtual Machine (자바 가상 머신)의 약자로 자바와 OS 사이에�
 또한 메모리 관리, Garbage Collection 등을 수행한다.
 
 ### JVM 구성 요소
+
 Class Loader
 
 JVM 내로 클래스 파일을 load하고 link를 통해 배치를 수행하는 모듈로 Runtime 시에 동적으로 클래스를 로드한다. 
@@ -51,10 +52,9 @@ Garbage Collector
 24시간 내내 돌아가는 서버 프로그램의 경우, JVM이 한가한 시점에 실행된다.
 
 ### 프로그램 실행 과정
-1.프로그램 실행
-2.JVM이 OS로 부터 메모리를 할당 받고, 용도에 따라 나누어 관리
-3.자바 컴파일러(javac)가 소스 코드(*.java)를 읽어 바이트 코드로 변환(*.class)
-4.JVM의 Class Loader가 변환된 파일(*.class)들을 로드
-5.Execution engine(실행 엔진) 은 로딩된 class 파일을 해석
-6.해석된 파일들은 Runtime Data Area(할당 메모리)에 배치되고 실질적 수행이 이루어짐
-
+1. 프로그램 실행
+2. JVM이 OS로 부터 메모리를 할당 받고, 용도에 따라 나누어 관리
+3. 자바 컴파일러(javac)가 소스 코드(*.java)를 읽어 바이트 코드로 변환(*.class)
+4. JVM의 Class Loader가 변환된 파일(*.class)들을 로드
+5. Execution engine(실행 엔진) 은 로딩된 class 파일을 해석
+6. 해석된 파일들은 Runtime Data Area(할당 메모리)에 배치되고 실질적 수행이 이루어짐
