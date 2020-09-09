@@ -10,6 +10,7 @@
 
 
 ## JAVA 동작 원리
+출처 : https://longbeom.tistory.com/15 [참조]
 
 ### JVM 이란
 Java Virtual Machine (자바 가상 머신)의 약자로 자바와 OS 사이에서 중개해주는 역할을 하여,
