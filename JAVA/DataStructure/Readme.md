@@ -99,7 +99,7 @@ numbers.remove(0); // 삭제
 - LinkedList는 순서대로 늘어선 것이 아니라 자료의 주소 값으로 서로 연결되어 있는 구조를 하고 있습니다.
 - ArrayList는 데이터들이 순서대로 쭉 늘어선 배열의 형식을 취함
 ![LinkedList 추가/삭제](./LinkedList삽입삭제.png) 
-![ArrayList 추가/삭제](./ArrayList삽입삭제.png)
+![ArrayList 추가/삭제](./ArrayList.png)
 
 ### 인덱스를 이용해서 데이터를 가져오는 것이 빈번하다면 내부적으로 배열을 이용하는 ArrayList가 훨씬 빠르다. 하지만 데이터의 추가/삭제가 빈번하다면 LinkedList가 훨씬 효과적이다
 [실제 구현 관련자료] (http://www.nextree.co.kr/p6506/)
