@@ -96,7 +96,19 @@ numbers.remove(0); // 삭제
 ## 자바는 2가지 형태의 리스트를 지원
 * LinkedList / ArrayList
 똑같은 기능(메소드)를 가진 리스트가 2가지 존재한다.
-- ArrayList는 데이터들이 순서대로 쭉 늘어선 배열의 형식을 취함
 - LinkedList는 순서대로 늘어선 것이 아니라 자료의 주소 값으로 서로 연결되어 있는 구조를 하고 있습니다.
-![LinkedList 추가/삭제](./LinkedList삽입삭제.png) ![ArrayList 추가/삭제](./ArrayList삽입삭제.png)
+- ArrayList는 데이터들이 순서대로 쭉 늘어선 배열의 형식을 취함
+![LinkedList 추가/삭제](./LinkedList삽입삭제.png) 
+![ArrayList 추가/삭제](./ArrayList삽입삭제.png)
 
+### 인덱스를 이용해서 데이터를 가져오는 것이 빈번하다면 내부적으로 배열을 이용하는 ArrayList가 훨씬 빠르다. 하지만 데이터의 추가/삭제가 빈번하다면 LinkedList가 훨씬 효과적이다
+[실제 구현 관련자료] (http://www.nextree.co.kr/p6506/)
+
+
+
+
+[참고자료]
+https://velog.io/@hygoogi/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%A0%95%EB%A6%AC-8xk66rgt2h
+https://sjs2215.tistory.com/83
+https://wayhome25.github.io/cs/2017/04/17/cs-18-1/
+http://www.nextree.co.kr/p6506/
