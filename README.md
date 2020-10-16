@@ -1,5 +1,5 @@
 # 목표
-1. [백준 단계별 문제풀이 챌린지](Study_Q-A/JAVA/baekjun/)
+1. [백준 단계별 문제풀이 챌린지](JAVA/baekjun/)
 
 
 # Study_Q-A
