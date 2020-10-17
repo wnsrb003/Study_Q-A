@@ -9,6 +9,8 @@ https://www.acmicpc.net/step
 while(A+B*n >= P*n) {n++;}       --->>>          n = A/(P-B)+1;
 
 2	   설탕 배달	
+### 부족한점 : 다양한 예외 사항을 생각, while에서 break 문 적절하게 쓰지 않으면 무한 루프 발생(컴퓨터는 정수만 다루는게 아니다)
+
 5		달팽이는 올라가고 싶다
 6	  ACM 호텔
 8		Fly me to the Alpha Centauri	
