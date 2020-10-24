@@ -21,21 +21,29 @@
 
 ## 사용
 > ArrayList 선언
+  
   ArrayList<Integer> number = new ArrayList<>();
 
 > 데이터 추가/삭제
+  
   number.add(1,50);  //인덱스:1에 50 추가
+  
   number.remove(1);  //인덱스:1에 데이터 50 삭제
 
 > get
+  
   number.get(2);   //인덱스:2의 데이터 가져오기
 
 > 크기
+  
   number.size();
 
 > Iterator
+  
   >> Iterator it = number.iterator();         // Iterator 데이터 타입의 it 변수에 number 리스트 선언
-     while(it.hasNext()){ int value = it.next();}   // it변수에 hasNext()->boolean으로 다음 엘리먼트가 있는지 확인하여 있으면 value에 it의 값이 저장
+  
+  while(it.hasNext()){ int value = it.next();}   // it변수에 hasNext()->boolean으로 다음 엘리먼트가 있는지 확인하여 있으면 value에 it의 값이 저장
+  
   >> for(int value : number){System.out.println(value);}  // 위와 같음
   
  
