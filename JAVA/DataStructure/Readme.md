@@ -1,5 +1,5 @@
 # 생활코딩 - DataStructure 강좌(64개) 
-[생활코딩 강좌] (/JAVA/DataStructure/Opentutorial)
+[생활코딩 강좌 정리](JAVA/DataStructure/Opentutorial)
 
 # 자료구조는 근본적으로 무엇인가를 '표현'하는 도구. 
   표현을 위해서 저장과 삭제라는 기능이 제공되는 것으로 이해하는 것이 옳다.
