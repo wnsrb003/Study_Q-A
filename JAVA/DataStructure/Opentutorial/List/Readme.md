@@ -47,4 +47,13 @@
   > for(int value : number){System.out.println(value);}  // 위와 같음
   
  
+ # LinkedList
+ 
+ ## 특징
+ - 추가 및 삭제 빠르다
+ - 검색 > 전부 탐색해야되서 느림
+ - 구현이 ArrayList보다 어려움
+ 
+ ## 사용
+ 
   
