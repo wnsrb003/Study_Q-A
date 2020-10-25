@@ -8,8 +8,18 @@ public class Main {
 		numbers.addLast(20);
 		numbers.addLast(30);
 		numbers.addLast(40);
-		numbers.add(1,15);
+//		numbers.add(1,15);
+//		numbers.addFirst(5);
+//		System.out.println(numbers);
+//		System.out.println(numbers.get(1));
 		
+		ArrayList.ListIterator li = numbers.listIterator();
+		while(li.hasNext()) {
+			System.out.println(li.next());
+		}
+		while(li.hasPrevious()) {
+			System.out.println(li.previous());
+		}
 	}
 
 }
