@@ -38,6 +38,7 @@
   number.size();
 
 ### Iterator
+  > Iterator를 권장!!
   
   > Iterator it = number.iterator();         // Iterator 데이터 타입의 it 변수에 number 리스트 선언
   
