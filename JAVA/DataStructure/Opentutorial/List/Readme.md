@@ -66,6 +66,12 @@
  - 검색 > 전부 탐색해야되서 느림
  - 구현이 ArrayList보다 어려움
  
+ ## 구성
+ - HEAD : 첫번째 노드
+ - Data Field : 데이터 값
+ - Link Field : 다음 노드를 알려주는 인덱스같은 값
+ - vertax = node = 객체
+ 
  ## 사용
  
   
