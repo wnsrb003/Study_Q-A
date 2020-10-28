@@ -74,4 +74,13 @@
  
  ## 사용
  
-  
+ ### 데이터 삭제
+ 
+ Node temp = node(k-1);
+ Node todoDeleted = temp.next;
+ temp.next = temp.next.next;
+ returnData = todoDeleted.data;
+ tododeleted = null;
+ size--;
+ return returnData;
+ 
