@@ -76,11 +76,41 @@
  
  ### 데이터 삭제
  
- Node temp = node(k-1);
- Node todoDeleted = temp.next;
- temp.next = temp.next.next;
- returnData = todoDeleted.data;
- tododeleted = null;
- size--;
- return returnData;
+  Node temp = node(k-1);
+  
+  Node todoDeleted = temp.next;
+  
+  temp.next = temp.next.next;
+  
+  returnData = todoDeleted.data;
+  
+  tododeleted = null;
+  
+  size--;
+  
+  return returnData;
  
+### Iterator
+
+ListIterator(){
+  next = head;
+  nextIndex=0;
+}
+
+next(){
+  lastReturned = next;
+  next = next.next;
+  nextIndex++;
+  return lastReturned;
+}
+
+previous(){
+  if(next==null){
+    lastReturned = next = tail;
+    }else{
+      lastRetruned = next = next.prev;
+     }
+     nextIndex--;
+     return lastReturned.data;
+ }
+     
