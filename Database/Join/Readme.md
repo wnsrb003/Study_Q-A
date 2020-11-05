@@ -2,8 +2,7 @@
 [참고 사이트]https://sql-joins.leopard.in.ua \
 [공부 자료(생활코딩)]https://github.com/egoing/sql-join
 
-기본 테이블(topic, author, profile)
-
+[Join 간단 사진]https://images.app.goo.gl/52o5zSREr3m9KWBU9
 
 ## LEFT OUTER JOIN
 > 왼쪽 테이블을 기준으로 조건과 같은 값만 출력되게 함
