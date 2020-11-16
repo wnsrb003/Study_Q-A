@@ -39,8 +39,7 @@ SELECT FIRST_NAME,LAST_NAME FROM sql_test_b;
 ### 기본문법
 > 두개의 SELECT문 간 컬럼의 개수는 동일해야 하고 해당 순서의 열에는 서로 호환되는 데이터 유형 이어야 합니다.
 ```
-SELECT
-	COLUMN_1_1, COLUMN_1_2 FROM	TABLE_NAME_1
-  EXCEPT
+SELECT COLUMN_1_1, COLUMN_1_2 FROM TABLE_NAME_1
+EXCEPT
 SELECT COLUMN_2_1, COLUMN_2_2 FROM TABLE_NAME_2
 ```
