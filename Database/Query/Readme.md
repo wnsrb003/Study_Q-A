@@ -7,22 +7,18 @@
 - ORDER BY로 정렬하고자 할 경우 맨 마지막 SELECT문에 ORDER BY 절을 사용한다.
 > 예제
 ```
-SELECT * 
-  FROM sql_test_a 
+SELECT * FROM sql_test_a 
 UNION
-SELECT * 
-  FROM sql_test_a;
+SELECT * FROM sql_test_a;
 ```
 
 ## UNION ALL
 > 두 개 이상의 SELECT 문들의 결과 집합을 단일 결과 집합으로 결합하며 결합시 중복된 데이터도 모두 출력 합니다.
 > 예제
 ```
-SELECT * 
-  FROM sql_test_a 
+SELECT * FROM sql_test_a 
 UNION ALL 
-SELECT * 
-  FROM sql_test_a;
+SELECT * FROM sql_test_a;
 ```
 
 ## INTERSECT
@@ -33,14 +29,18 @@ SELECT *
 - ORDER BY로 정렬하고자 할 경우 맨 마지막 SELECT문에 ORDER BY절을 사용합니다.
 > 예제 
 ```
-SELECT FIRST_NAME,LAST_NAME
-  FROM sql_test_a 
+SELECT FIRST_NAME,LAST_NAME FROM sql_test_a 
 INTERSECT
-SELECT FIRST_NAME,LAST_NAME
-  FROM sql_test_b;
+SELECT FIRST_NAME,LAST_NAME FROM sql_test_b;
 ```
 
 ## EXCEPT
 > 맨위에 SELECT문의 결과 집합에서 그 아래에 있는 SELECT문의 결과 집합을 제외한 LEFT ONLY 결과를 반환합니다.
 ### 기본문법
 > 두개의 SELECT문 간 컬럼의 개수는 동일해야 하고 해당 순서의 열에는 서로 호환되는 데이터 유형 이어야 합니다.
+```
+SELECT
+	COLUMN_1_1, COLUMN_1_2 FROM	TABLE_NAME_1
+  EXCEPT
+SELECT COLUMN_2_1, COLUMN_2_2 FROM TABLE_NAME_2
+```
