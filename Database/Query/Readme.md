@@ -43,3 +43,26 @@ SELECT COLUMN_1_1, COLUMN_1_2 FROM TABLE_NAME_1
 EXCEPT
 SELECT COLUMN_2_1, COLUMN_2_2 FROM TABLE_NAME_2
 ```
+
+## 서브쿼리
+> 하나의 SQL 문에 포함되어 있는 또 다른 SQL 문을 말합니다.
+### 서브쿼리 사용시 주의사항
+1. 서브쿼리를 괄호로 감싸서 사용한다.
+
+2. 서브쿼리는 단일 행 또는 복수 행 비교 연산자와 함께 사용 가능하다.
+
+3. 서브쿼리에서는 ORDER BY 를 사용하지 못한다.
+### 서브쿼리가 사용 가능한 곳
+1. SELECT 절
+
+2. FROM 절
+
+3. WHERE 절
+
+4. HAVING 절
+
+5. ORDER BY 절
+
+6. INSERT 문의 VALUES 절
+
+7. UPDATE 문의 SET 절
