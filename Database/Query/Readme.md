@@ -66,3 +66,28 @@ SELECT COLUMN_2_1, COLUMN_2_2 FROM TABLE_NAME_2
 6. INSERT 문의 VALUES 절
 
 7. UPDATE 문의 SET 절
+### 트랜잭션(Transaction)
+> 데이터베이스의 상태를 변환시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미한다.
+> 하나의 처리를 여러 단계로 다루는 기능을 트랜잭션(Transaction)이라고 합니다. 
+> 하나의 처리를 Commit이라는 명령어를 수행하기전 마지막으로 한번 더 확인할 수 있는 기회를 줌으로써 좀더 안정적인 데이터베이스 작업을 가능하게 합니다. 
+> 트랜잭션의 실행결과를 데이터베이스에 반영하는것을(Commit)이라고 하고 반영하기 전으로 되돌리는것을 롤백(RollBack)이라고 합니다. 
+> 예제
+```
+--문법
+SELECT * FROM 테이블명 WHERE 칼럼명 = '내용' --칼럼의 존재 확인
+
+BEGIN TRAN --트랜잭션 시작
+UPDATE 테이블명 SET Update할칼럼 = '바꿀문구' WHERE 칼럼명 ='기존문구' --홍길동을 이순신으로 바꿈
+SELECT * FROM 테이블명 WHERE 칼럼명 = '바뀐문구'--나만 바뀐것을 확인할수 있고 아직 적용은 안되어있는 상태이다.
+ROLLBACK TRAN -되돌리기 --Update 취소
+COMMIT TRAN --트랜잭션 완료 --Update 적용
+-------------------------------------------------------------------------------------------------------------Example
+SELECT * FROM My_Table WHERE Nm_Kor = '홍길동' --홍길동 칼럼의 존재 확인
+
+BEGIN TRAN --트랜잭션 시작
+UPDATE My_Table SET Nm_Kor = '이순신' WHERE Nm_Kor ='홍길동' --홍길동을 이순신으로 바꿈
+SELECT * FROM My_Table WHERE NM_KOR = '이순신'--나만 바뀐것을 확인할수 있고 아직 적용은 안되어있는 상태이다.
+ROLLBACK TRAN -되돌리기
+COMMIT TRAN --트랜잭션 완료
+```
+[출처] https://coding-factory.tistory.com/82
