@@ -42,5 +42,5 @@ IP헤더에는 여러 필드 값(버전,헤더길이,프로토콜 등), 출발�
 
   
 # 출처
-[인생의 로그캣] https://noahlogs.tistory.com/47?category=827412
+[인생의 로그캣] https://noahlogs.tistory.com/47?category=827412 \
 [Server-talk 서버이야기] https://server-talk.tistory.com/46
