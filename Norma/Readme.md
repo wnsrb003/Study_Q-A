@@ -28,7 +28,7 @@
 2. Mosquitto 컨테이너 생성
 ``` sudo docker run -p 1883:1883 --name mosquitto -d ansi/mosquitto> ```
 
-## Publish
+## Publish&Subcribe
 ### JS 코드
 ``` js
 const mqtt = require('mqtt');
